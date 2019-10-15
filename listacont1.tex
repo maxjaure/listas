@@ -1,0 +1,70 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[portuguese]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage[colorlinks,allcolors=blue]{hyperref}
+\usepackage{microtype}
+\usepackage{graphicx}
+
+%\addtokomafont{disposition}{\rmfamily}
+\let\emptyset=\varnothing
+
+\newcommand{\tb}{\textbf}
+\newcommand{\tbu}[1]{\tb{\textup{#1}}}
+
+\newcommand{\dpar}[1]{\left(#1\right)}
+\newcommand{\dsqr}[1]{\left[#1\right]}
+\newcommand{\dcur}[1]{\left\{#1\right\}}
+\newcommand{\dabs}[1]{\left|#1\right|}
+\newcommand{\ang}[1]{\left\langle#1\right\rangle}
+
+\newcommand{\ds}{\displaystyle}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\arcsen}{arc sen}
+\DeclareMathOperator{\senh}{senh}
+
+\title{Primeira lista de matemática}
+\author{Prof.: Max Jáuregui}
+\date{}
+
+%\linespread{1.2}
+%\linespread{1.213} %11pt
+%\linespread{1.241} %12pt
+
+\begin{document}
+\maketitle
+\begin{enumerate}
+  \item Escreva explicitamente os elementos dos seguintes conjuntos:
+  \begin{enumerate}
+    \item $A=\{n\in\N:n\le 5\}$
+    \item $B=\{n\in\N:n<5\}$
+    \item $C=\{n\in\Z:-2<n\le 2\}$
+    \item $D=\{m^2\in\R:m\in\Z, -1\le m\le 2\}$
+    \item $E=\{m/n\in\Q:m\in\{1,2,3\},n\in\{1,2\}\}$
+  \end{enumerate}
+  \item Dados os conjuntos $X=\{2,3,5,7\}$ e $Y=\{n\in\Z:-1\le x\le 3\}$, encontre $X\cup Y$ (união), $X\cap Y$ (interseção), $X\setminus Y$ (diferença de $X$ com $Y$) e $Y\setminus X$ (diferença de $Y$ com $X$).
+  \item Use diagramas para verificar o seguinte:
+  \begin{enumerate}
+    \item $A\cap B\subset B$
+    \item $A\setminus B\subset A$
+    \item $A\cup(B\cap A)=A$
+    \item $A\setminus(A\cap B)=A\setminus B$
+    \item $A\cup(B\cap C)=(A\cup B)\cap (A\cup C)$
+  \end{enumerate}
+  \item Quantos números de $3$ dígitos podem ser formados com os algarismos $2,3$ e $5$?
+  \item No exercício anterior, se queremos números cujos algarismos sejam todos diferentes, quantos números haveriam?
+  \item De quantas formas podem ser colocados $5$ relógios distintos em duas caixas, sabendo que cada caixa pode conter mais de um relógio?
+  \item Suponha que em um estacionamento haja $5$ vagas disponíveis. De quantas formas diferentes podem ser colocados $3$ carros?
+  \item Encontre o número total de ordenamentos possíveis das letras das palavras (a)~ROMA, (b) CASA e (c) GARRAFA.
+\end{enumerate}
+\end{document}
