@@ -1,0 +1,80 @@
+\documentclass[a4paper]{article}
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[colorlinks,allcolors=blue]{hyperref}
+\usepackage{microtype}
+\usepackage{graphicx}
+
+\let\emptyset=\varnothing
+
+\newcommand{\tb}{\textbf}
+\newcommand{\tbu}[1]{\tb{\textup{#1}}}
+\newcommand{\mb}{\mathbf}
+\newcommand{\mc}{\mathcal}
+
+\newcommand{\dpar}[1]{\left(#1\right)}
+\newcommand{\dsqr}[1]{\left[#1\right]}
+\newcommand{\dcur}[1]{\left\{#1\right\}}
+\newcommand{\dabs}[1]{\left|#1\right|}
+\newcommand{\ang}[1]{\left\langle#1\right\rangle}
+
+\newcommand{\ds}{\displaystyle}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\arcsen}{arc sen}
+\DeclareMathOperator{\senh}{senh}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\posto}{posto}
+\DeclareMathOperator{\sgn}{sgn}
+
+\title{Terceira lista de matemática II}
+\author{Prof.: Max Jáuregui}
+\date{}
+%\linespread{1.2}
+%\linespread{1.213} %11pt
+%\linespread{1.241} %12pt
+
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item Sejam os vetores bidimensionais $\vec A=(1,3)$, $\vec B=(2,5)$ e $\vec C=(3,-1)$. Faça o seguinte:
+\begin{enumerate}
+	\item Represente graficamente o vetor $\vec A$ colocando sua origem na origem do sistema de coordenadas.
+	\item Represente graficamente o vetor $\vec B$ colocando sua origem no ponto $(3,-1)$.
+	\item Usando as coordenadas calcule a soma $\vec A+\vec B+\vec C$. Por outro lado, construa o vetor soma de forma gráfica e compare seus resultados.
+	\item Determine o vetor $2\vec A-3\vec B+\vec C$.
+	\item Encontre um vetor unitário paralelo a $\vec A$.
+\end{enumerate}
+\item Mostre que o vetor tridimensional $\vec A=(1,3,1)$ pode ser escrito como uma combinação linear dos vetores $\vec B=(1,1,1)$ e $\vec C=(2,3,2)$.
+\item Dê um exemplo de um conjunto $X\subset\R^2$ que tenha dois vetores L.I. cujas primeiras coordenadas sejam iguais a $1$.
+\item Mostre que o conjunto $X=\{(1,2,3),(4,5,6),(7,6,8)\}\subset\R^3$ é L.D..
+\item Mostre que o conjunto $\mc B=\{(-1,1,2),(1,1,1),(1,-1,-1)\}\subset\R^3$ é uma base de $\R^3$.
+\item Escreva o vetor $(1,0,0)\in\R^3$ como uma combinação linear dos vetores da base $\mc B$ do exercício anterior.
+\item Dados os vetores tridimensionais $\vec A=(1,2,3)$, $\vec B=(-1,0,1)$ e $\vec C=(1,2,1)$. Faça o seguinte:
+\begin{enumerate}
+	\item Calcule $\vec A\cdot\vec B$ e $\vec A\cdot \vec C$.
+	\item Mostre que os vetores $\vec B$ e $\vec C$ são ortogonais.
+	\item Calcule $|\vec B+\vec C|^2$. Compare seu resultado com $|\vec B|^2+|\vec C|^2$.
+	\item Determine o ângulo entre os vetores $\vec A$ e $\vec B$.
+	\item Calcule $|\vec A-\vec B|^2$. Compare seu resultado com $|\vec A|^2+|\vec B|^2-2\vec A\cdot\vec B$.
+\end{enumerate} 
+\item Considere um triângulo no qual dois dos seus lados têm comprimentos $3$ e $5$ respectivamente e formam um ângulo de $60º$. Com essas informações, determine o comprimento do terceiro lado.
+\item Dados os vetores tridimensionais $\vec A=(2,1,1)$, $\vec B=(1,1,1)$ e $\vec C=(2,2,2)$. Faça o seguinte:
+\begin{enumerate}
+	\item Calcule $\vec A\times \vec B$, $\vec A\times \vec C$ e $\vec B\times \vec C$.
+	\item Calcule $\vec B\times \vec A$, $\vec C\times \vec A$ e $\vec C\times \vec B$. Compare com o item anterior.
+	\item Calcule $\vec A\cdot (\vec A\times\vec B)$ e $\vec B\cdot(\vec A\times\vec B)$.
+	\item Determine a área do paralelogramo construído a partir dos vetores $\vec A$ e $\vec C$.
+\end{enumerate}
+\item Dê um exemplo de um vetor não-nulo que seja ortogonal ao vetor tridimensional $\vec A=(1,2,3)$.
+\item Dê um exemplo de um vetor não-nulo que seja ortogonal aos vetores tridimensionais $\vec A=(1,1,1)$ e $\vec B=(1,0,1)$ simultaneamente.
+\item Encontre o volume do paralelepípedo construído a partir dos vetores tridimensionais $\vec A=(1,2,1)$, $\vec B=(-1,2,1)$ e $\vec C=(0,-1,2)$.
+\end{enumerate}
+\end{document}

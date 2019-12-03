@@ -1,0 +1,85 @@
+\documentclass[a4paper]{article}
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[colorlinks,allcolors=blue]{hyperref}
+\usepackage{microtype}
+\usepackage{graphicx}
+
+\let\emptyset=\varnothing
+
+\newcommand{\tb}{\textbf}
+\newcommand{\tbu}[1]{\tb{\textup{#1}}}
+\newcommand{\mb}{\mathbf}
+\newcommand{\mc}{\mathcal}
+
+\newcommand{\dpar}[1]{\left(#1\right)}
+\newcommand{\dsqr}[1]{\left[#1\right]}
+\newcommand{\dcur}[1]{\left\{#1\right\}}
+\newcommand{\dabs}[1]{\left|#1\right|}
+\newcommand{\ang}[1]{\left\langle#1\right\rangle}
+
+\newcommand{\ds}{\displaystyle}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\arcsen}{arc sen}
+\DeclareMathOperator{\senh}{senh}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\posto}{posto}
+\DeclareMathOperator{\sgn}{sgn}
+
+\title{Quarta lista de álgebra linear}
+\author{Prof.: Max Jáuregui}
+\date{}
+%\linespread{1.2}
+%\linespread{1.213} %11pt
+%\linespread{1.241} %12pt
+
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item Dê um exemplo de um conjunto $X\subset\R^2$ que tenha dois vetores L.I. cujas primeiras coordenadas sejam iguais a $1$.
+\item Mostre que o conjunto $X=\{(1,2,3),(4,5,6),(7,6,8)\}\subset\R^3$ é L.D..
+\item Mostre que o conjunto $\mc B=\{(-1,1,2),(1,1,1),(1,-1,-1)\}\subset\R^3$ é uma base de $\R^3$.
+\item Escreva o vetor $(1,0,0)\in\R^3$ como uma combinação linear dos vetores da base $\mc B$ do exercício anterior.
+\item Seja $M(2\times 2)$ o espaço vetorial das matrizes $2\times 2$. Qual é a dimensão desse espaço? Adicionalmente, mostre que o conjunto
+  $$\mc B=\dcur{
+    \begin{bmatrix}
+      1&0\\
+      0&1
+    \end{bmatrix},\begin{bmatrix}
+      0&1\\
+      1&0
+    \end{bmatrix},\begin{bmatrix}
+      0&-1\\
+      1&0
+    \end{bmatrix},\begin{bmatrix}
+      1&0\\
+      0&-1
+    \end{bmatrix}
+  }$$
+  é uma base de $M(2\times 2)$.
+\item Escreva a matriz $
+  \begin{bmatrix}
+    1&0\\
+    0&0
+  \end{bmatrix}
+$ como uma combinação linear das matrizes da base $\mc B$ do exercício anterior.
+\item Mostre que o conjunto $X=\{(1,0,1,0),(1,2,3,4),(0,0,1,1)\}\subset\R^4$ é L.I.. Quál é a dimensão do subespaço gerado por $X$? É menor do que $4$?
+\item Seja $\mc P_3$ o espaço vetorial dos polinômios de grau $\le 3$. Quál é a dimensão desse espaço? Adicionalmente, mostre que $\mc B=\{x^2-2x+1,x^3,x^3-x,4\}$ é uma base de $\mc P_3$.
+\item Seja $\R^\R$ o espaço vetorial das funções reais de uma variável real. Mostre que os seguintes subconjuntos de $\R^\R$ são L.I.
+  \begin{enumerate}
+  \item $\{\sen x,\cos x\}$
+  \item $\{e^x,e^{2x},e^{3x}\}$
+  \item $\{\sen x,\sen 2x,\sen 3x\}$
+  \end{enumerate}
+  \textit{Dica:} Use derivada.
+\item O espaço $\R^\R$ tem dimensão infinita. Quais são as dimensões dos subespaços gerados pelos subconjuntos de $\R^\R$ considerados no exercício anterior.
+\end{enumerate}
+\end{document}

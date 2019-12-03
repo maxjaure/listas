@@ -1,0 +1,74 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[portuguese]{babel}
+%\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage[colorlinks,allcolors=blue]{hyperref}
+\usepackage{microtype}
+\usepackage{graphicx}
+
+\let\emptyset=\varnothing
+
+\newcommand{\tb}{\textbf}
+\newcommand{\tbu}[1]{\tb{\textup{#1}}}
+\newcommand{\mb}{\mathbf}
+\newcommand{\mc}{\mathcal}
+
+\newcommand{\dpar}[1]{\left(#1\right)}
+\newcommand{\dsqr}[1]{\left[#1\right]}
+\newcommand{\dcur}[1]{\left\{#1\right\}}
+\newcommand{\dabs}[1]{\left|#1\right|}
+\newcommand{\ang}[1]{\left\langle#1\right\rangle}
+
+\newcommand{\ds}{\displaystyle}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\arcsen}{arc sen}
+\DeclareMathOperator{\senh}{senh}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\posto}{posto}
+\DeclareMathOperator{\sgn}{sgn}
+
+\title{Terceira lista de álgebra linear}
+\author{Prof.: Max Jáuregui}
+\date{}
+%\linespread{1.2}
+%\linespread{1.213} %11pt
+%\linespread{1.241} %12pt
+
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item Considere o conjunto $\R^2$ com a definição usual de multiplicação por um número real. Mostre que $\R^2$ não é um espaço vetorial se a adição é definida por
+\begin{enumerate}
+	\item $u+v=(x_1+x_2,0)$
+	\item $u+v=(x_1x_2,y_1y_2)$
+\end{enumerate}
+para quaisquer $u=(x_1,y_1)$ e $v=(x_2,y_2)$.
+\item Seja $E$ um espaço vetorial. Usando as propriedades de espaço vetorial e o fato de que $u+v=u+w\Rightarrow v=w$ para quaisquer $u,v,w\in E$, mostre que $(-1)v=-v$.
+\item Sejam $u=(a,b)$ e $v=(c,d)$ vetores não-nulos de $\R^2$. Mostre que $u$ é um múltiplo de $v$ ($u$ é paralelo a $v$) se, e somente se, $ad-bc=0$.
+\item Mostre que o conjunto $S$ das matrizes simétricas $3\times 3$ é um subespaço do espaço vetorial $M(3\times 3)$ das matrizes $3\times 3$.
+\item Mostre que o conjunto $P$ das funções pares $f:\R\to\R$ é um subespaço de $\R^\R$.
+\item Encontre o subespaço gerado pelas funções polinomiais $p_0,p_1,\ldots,p_n:\R\to\R$ definidas por $p_k(x)=x^k$, $k\in\{0,1,\ldots,n\}$.
+\item Mostre que o conjunto $H=\{(x_1,\ldots,x_n)\in\R^n:a_1x_1+\cdots+a_nx_n=0\}$ é um subespaço de $\R^n$. Esse subespaço é chamado de um \emph{hiperplano} de $\R^n$.
+\item Mostre que o sistema de equações lineares
+\begin{equation*}
+	\begin{split}
+	a_{11}x_1+\cdots+a_{1n}x_n&=0\\
+	\vdots\qquad\qquad&\quad\;\;\vdots\\
+	a_{m1}x_1+\cdots+a_{mn}x_n&=0
+	\end{split}
+\end{equation*}
+sempre tem solução (encontre uma solução particular que não depende dos valores dos coeficientes $a_{ij}$). Além disso, mostre que o conjunto das soluções desse sistema é um subespaço de $\R^n$ (perceba que cada equação do sistema está associada a um hiperplano de $\R^n$).
+\item É possível escrever o vetor $(2,3,6)$ como combinação linear dos vetores $(1,2,1)$ e $(0,4,1)$?
+\item Usando o exercício 3 e a regra de Cramer, mostre que se $u,v\in\R^2$ são vetores não-nulos e não-paralelos, então o subespaço gerado por $\{u,v\}$ é $\R^2$, ou seja, $\{u,v\}$ é um conjunto de geradores de $\R^2$.
+\item Encontre dois conjuntos de geradores diferentes para o espaço vetorial $E=\{(\alpha,-\alpha)\in\R^2:\alpha\in\R\}$. É possível achar um conjunto de geradores de $E$ que contenha mais de um vetor?
+\end{enumerate}
+\end{document}
